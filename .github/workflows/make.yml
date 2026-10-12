@@ -2,8 +2,6 @@ name: Make
 run-name: "Make ${{ inputs.leg || github.event_name }} ${{ inputs.racecar_run }}"
 
 on:
-  schedule:
-  - cron: '0 0 1 * *'
   push:
     branches:
     - "**"
